@@ -434,17 +434,20 @@ body {
 .footer-page {
     display: flex;
     height: 312px;
-    flex-direction: row;
+    /* flex-direction: row;
     padding-inline-start: 156px;
     padding-inline-end: 156px;
-    padding-top: 100px;
+    padding-top: 100px; */
+    align-items: center;
+    justify-content: center;
 
 }
 
 .footer {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 264px;
 }
 
 
@@ -506,6 +509,9 @@ body {
     padding: 16px 8px;
     background: transparent;
     color: var(--WHITE);
+}
+.input-email:focus {
+    outline: none;
 }
 .input-email::placeholder {
     color: var(--WHITE);
