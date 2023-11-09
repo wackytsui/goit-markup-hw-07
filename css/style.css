@@ -796,6 +796,10 @@ body {
 
 /* css for mobile and tablet */
 
-
+@media (max-width:428px){
+    .containers {
+        display: block;
+    }
+}
 
 /* end of css for mobile and tablet */
