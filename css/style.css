@@ -799,6 +799,38 @@ body {
 @media (max-width:428px){
     .containers {
         display: block;
+        width: 428px;
+    }
+    .hero {
+        display: flex;
+        height: 432px;
+    }
+    .hero-text {
+        font-size: 32px;
+    }
+    .body-text {
+        height: 624px;
+        padding: 0 16px 0 16px;
+    }
+    .body-text-list {
+        display: inline-flex;
+        flex-direction: column;
+        gap: 72px;
+    }
+    .body-text-list li {
+        padding: 0;
+    }
+    .body-text-list li h3 {
+        text-align: center;
+        font-size: 36px;
+    }
+    .body-text-list li p,
+    .body-text-list li h3 {
+        width: 396px;
+    }
+    .body-img,
+    .body-feature {
+        display: none;
     }
 }
 
