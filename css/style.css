@@ -432,10 +432,6 @@ body {
 .footer-page {
     display: flex;
     height: 312px;
-    /* flex-direction: row;
-    padding-inline-start: 156px;
-    padding-inline-end: 156px;
-    padding-top: 100px; */
     align-items: center;
     justify-content: center;
 
@@ -794,13 +790,35 @@ body {
 }
 /* end of modal script */
 
-/* css for mobile and tablet */
+/* css query for mobile, tablet and desktop */
 
 @media (max-width:428px){
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    /* start of general */
     .containers {
         display: block;
         width: 428px;
     }
+    .body-img,
+    .body-feature,
+    .navigation {
+        display: none;
+    }
+    /* end of general */
+
+    /* start nav */
+    .mobile-nav {
+        display: flex;
+        height: 70px;
+        padding: 0 16px 0 16px;
+        justify-content: space-between;
+    }
+    /* end nav */
+
+    /* start of hero section */
     .hero {
         display: flex;
         height: 432px;
@@ -808,6 +826,9 @@ body {
     .hero-text {
         font-size: 32px;
     }
+    /* end of hero section */
+
+    /* start of section 2 */
     .body-text {
         height: 624px;
         padding: 0 16px 0 16px;
@@ -828,10 +849,71 @@ body {
     .body-text-list li h3 {
         width: 396px;
     }
-    .body-img,
-    .body-feature {
-        display: none;
+    /* end of section 2 */
+
+    /* start of team */
+    .body-team{
+        display: inline-flex;
+        height: 2232px;
+        align-items: center;
+        justify-content: center;
     }
+    .body-team-list {
+        display: flex;
+        gap: 72px;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+    /* end of team */
+
+    /* start of customer */
+    .customer-container {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .customer-head {
+        margin-top: 96px;
+    }   
+    .customer-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 96px;
+    }
+    /* end of customer */
+
+    /* start of footer */
+    .footer-page {
+        display: flex;
+        height: 664px;
+        flex-direction: column;
+        gap: 72px;
+    }
+    .footer {
+        align-items: center;
+        justify-content: center;
+    }
+        .social-container {
+            margin: 0;
+        align-items: center;
+    }
+    .subscribe-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .input-email {
+        width: 396px;
+    }
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* end of footer */
 }
 
 /* end of css for mobile and tablet */
