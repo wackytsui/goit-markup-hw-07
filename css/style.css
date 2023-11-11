@@ -791,8 +791,12 @@ body {
 /* end of modal script */
 
 /* css query for mobile, tablet and desktop */
-@media (max-width:1440px){
-    .mobile-nav {
+.mobile-menu {
+    display: none;
+}
+@media (min-width:1158px){
+.mobile-nav,
+    .mobile-menu {
         display: none;
     }
 }
@@ -820,6 +824,9 @@ body {
         padding: 0 16px 0 16px;
         justify-content: space-between;
         align-items: center;
+    }
+    .mobile-menu.is-open {
+        transform: translateX(0);
     }
     .burger {
         stroke: currentColor;
