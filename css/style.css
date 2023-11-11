@@ -531,6 +531,7 @@ body {
     text-transform: capitalize;
     color: var(--IRIS);
     padding: 12px 24px;
+    flex-shrink: 0;
 
     border-radius: 4px;
     border: 1px solid var(--CORNFLOWER);
@@ -569,7 +570,6 @@ body {
     align-items: center;
     justify-content: center;
     gap: 24px;
-
     margin-top: 96px;
     margin-left: 427px;
     margin-right: 427px;
@@ -791,7 +791,11 @@ body {
 /* end of modal script */
 
 /* css query for mobile, tablet and desktop */
-
+@media (max-width:1440px){
+    .mobile-nav {
+        display: none;
+    }
+}
 @media (max-width:428px){
     body {
         margin: 0;
@@ -815,6 +819,10 @@ body {
         height: 70px;
         padding: 0 16px 0 16px;
         justify-content: space-between;
+        align-items: center;
+    }
+    .burger {
+        stroke: currentColor;
     }
     /* end nav */
 
