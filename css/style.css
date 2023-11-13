@@ -615,6 +615,7 @@ body {
 }
 
 .box {
+    display: flex;
     position: relative;
     height: 300px;
     width: 360px;
@@ -856,6 +857,7 @@ body {
     .mobile-menu {
         display: none;
         position: relative;
+        z-index: 1;
     }
     .mobile-menu.is-open {
         transform: translateX(0);
