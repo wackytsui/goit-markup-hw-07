@@ -681,7 +681,7 @@ body {
                 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
 
-.data-modal-close {
+.data-modal-close{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -791,45 +791,91 @@ body {
 /* end of modal script */
 
 /* css query for mobile, tablet and desktop */
-.mobile-menu {
-    display: none;
-}
 @media (min-width:1158px){
-.mobile-nav,
-    .mobile-menu {
+    .mobile-menu,
+    .mobile-nav {
         display: none;
     }
 }
 @media (max-width:428px){
+    /* start of general */
     body {
         margin: 0;
         padding: 0;
     }
-    /* start of general */
+
+    .customer-container,
+    .body-team,
+    .footer {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
     .containers {
         display: block;
         width: 428px;
     }
+
     .body-img,
     .body-feature,
-    .navigation {
+    .navigation,
+    .underline {
         display: none;
     }
+
     /* end of general */
 
     /* start nav */
-    .mobile-nav {
+    .js-open-menu {
+        stroke: currentColor;
+    }
+
+    .mobile-container {
         display: flex;
-        height: 70px;
-        padding: 0 16px 0 16px;
-        justify-content: space-between;
         align-items: center;
+        justify-content: space-between;
+        padding: 20px 15px;
+    }
+    
+    .mobile-menu-container {
+        position: relative;
+        height: 100%;
+        padding: 40px;
+    }
+    
+    .mobile-navbar {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .mobile-menu {
+        display: none;
+        position: relative;
     }
     .mobile-menu.is-open {
         transform: translateX(0);
     }
-    .burger {
-        stroke: currentColor;
+
+    .js-close-menu {
+        position: absolute;
+        top: 10px;
+        right: 25px;
+    }
+
+    .mobile-menu {
+        top: 0;
+        display: block;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        background-color: var(--WHITE);
+        transform: translateX(100%);
+        transition: transform 250ms ease-in-out;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     /* end nav */
 
@@ -838,28 +884,33 @@ body {
         display: flex;
         height: 432px;
     }
+
     .hero-text {
         font-size: 32px;
     }
     /* end of hero section */
-
+    
     /* start of section 2 */
     .body-text {
         height: 624px;
         padding: 0 16px 0 16px;
     }
+
     .body-text-list {
         display: inline-flex;
         flex-direction: column;
         gap: 72px;
     }
+
     .body-text-list li {
         padding: 0;
     }
+
     .body-text-list li h3 {
         text-align: center;
         font-size: 36px;
     }
+
     .body-text-list li p,
     .body-text-list li h3 {
         width: 396px;
@@ -868,11 +919,9 @@ body {
 
     /* start of team */
     .body-team{
-        display: inline-flex;
         height: 2232px;
-        align-items: center;
-        justify-content: center;
     }
+
     .body-team-list {
         display: flex;
         gap: 72px;
@@ -881,17 +930,12 @@ body {
         padding: 0;
     }
     /* end of team */
-
+    
     /* start of customer */
-    .customer-container {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-    }
     .customer-head {
         margin-top: 96px;
-    }   
+    }  
+
     .customer-list {
         display: flex;
         flex-wrap: wrap;
@@ -906,23 +950,23 @@ body {
         flex-direction: column;
         gap: 72px;
     }
-    .footer {
-        align-items: center;
-        justify-content: center;
+
+    .social-container {
+        margin: 0;
+    align-items: center;
     }
-        .social-container {
-            margin: 0;
-        align-items: center;
-    }
+
     .subscribe-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0;
     }
+
     .input-email {
         width: 396px;
     }
+
     .form-container {
         display: flex;
         flex-direction: column;
