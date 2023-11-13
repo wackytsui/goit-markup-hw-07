@@ -864,6 +864,14 @@ body {
         position: absolute;
         top: 10px;
         right: 25px;
+        border: none;
+
+        display: flex;
+        height: 24px;
+        width: 24px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
     }
 
     .mobile-menu {
@@ -877,6 +885,25 @@ body {
         transition: transform 250ms ease-in-out;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+
+    .nav-link:hover {
+        color: var(--OCEAN);
+        border-bottom: none;
+        transition: transform 250ms ease-in-out;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+    .nav-contact {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .mail {
+        font-size: 36px;
+    }
+    
     /* end nav */
 
     /* start of hero section */
