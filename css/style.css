@@ -597,7 +597,7 @@ body {
 }
 
 .list-disc {
-    display: inline-flex;
+    display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
@@ -894,16 +894,24 @@ body {
     }
     .nav-list {
         flex-direction: column;
+        margin: 0;
     }
     .nav-contact {
         flex-direction: column;
-        align-items: center;
         gap: 40px;
+        margin: 0;
     }
-    .mail {
+    .tel {
         font-size: 36px;
     }
-    
+    .mail {
+        font-size: 20px;
+    }
+    .social-nav {
+        display: flex;
+        align-items: center;
+        gap: 56px;
+    }
     /* end nav */
 
     /* start of hero section */
@@ -1000,6 +1008,20 @@ body {
         align-items: center;
     }
     /* end of footer */
+    /* start portfolio */
+    .nav-btn {
+        margin: 0;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-bottom: 48px;
+    }
+    .picture-parent {
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 48px;
+    }
+    /* end portfolio */
 }
 
 /* end of css for mobile and tablet */
