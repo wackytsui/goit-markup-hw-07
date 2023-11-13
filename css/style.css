@@ -806,6 +806,7 @@ body {
 
     .customer-container,
     .body-team,
+    .body-team-list,
     .footer {
         display: inline-flex;
         align-items: center;
@@ -961,8 +962,6 @@ body {
         display: flex;
         gap: 72px;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         margin: 0;
         padding: 0;
     }
