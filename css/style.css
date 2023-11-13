@@ -923,6 +923,9 @@ body {
         gap: 40px;
         margin: 0;
     }
+    .nav-link {
+        font-size: 36px;
+    }
     .tel {
         font-size: 36px;
     }
