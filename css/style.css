@@ -194,10 +194,11 @@ body {
     border-bottom: 1px solid var(--CORNFLOWER);
     background: var(--WHITE);
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-left: 156px;
     margin-right: 156px;
     flex-wrap: nowrap;
+    
 }
 
 .nav-parent {
@@ -215,8 +216,8 @@ body {
     display: flex;
     margin-top: 4px;
     gap: 40px;
-    margin-inline-start: 76px;
-    margin-inline-end: 235px;
+    /* margin-inline-start: 76px;
+    margin-inline-end: 235px; */
 }
 
 .nav-contact {
@@ -805,13 +806,17 @@ body {
     .navigation {
         display: none;
     }
+    
+    .js-open-menu {
+        stroke: currentColor;
+    }
     .mobile-menu.is-open {
         transform: translateX(0);
     }
 
     .mobile-menu {
         top: 0;
-        display: f;
+        display: flex;
         height: 100vh;
         width: 100%;
         position: fixed;
